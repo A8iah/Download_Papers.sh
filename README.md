@@ -1,1 +1,15 @@
-# Download_Papers.Sh
+#!/usr/bin/env bash
+mkdir -p acidd_refs && cd acidd_refs
+
+# One direct PDF link + output name
+wget "<PDF_URL>" -O "<name>.pdf"
+wget "<PDF_URL>" -O "<name>.pdf"
+
+# Or a loop for many links
+for url in \
+  "<PDF_URL_1>" \
+  "<PDF_URL_2>" ; do
+  wget "$url"
+done
+
+echo "Total: $(ls -1 *.pdf 2>/dev/null | wc -l) files"
