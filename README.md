@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-mkdir -p acidd_refs && cd acidd_refs
+# !/usr/bin/env bash
+mkdir -p my_papers && cd my_papers
 
 # One direct PDF link + output name
 wget "<PDF_URL>" -O "<name>.pdf"
