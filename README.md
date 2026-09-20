@@ -1,3 +1,4 @@
+```bash
 # !/usr/bin/env bash
 mkdir -p my_papers && cd my_papers
 
@@ -13,3 +14,4 @@ for url in \
 done
 
 echo "Total: $(ls -1 *.pdf 2>/dev/null | wc -l) files"
+```
